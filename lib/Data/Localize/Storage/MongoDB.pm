@@ -15,6 +15,8 @@ has 'collection' => (
     }
 );
 
+sub is_volitile { 0 }
+
 sub get {
     my ( $self, $key ) = @_;
     my $result = $self->collection->find_one({ _id => $key });
