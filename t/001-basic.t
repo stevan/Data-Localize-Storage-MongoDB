@@ -41,4 +41,6 @@ use_ok "Data::Localize::Storage::MongoDB";
     }
 }
 
+$conn->get_database('data_localize_test')->drop;
+
 done_testing;

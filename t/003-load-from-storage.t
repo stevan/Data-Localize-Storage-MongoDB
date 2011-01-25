@@ -45,6 +45,8 @@ $loc->add_localizer(
     is( $loc->localize( 'nonexistent.hello_world' ), 'nonexistent.hello_world' );
 }
 
+$conn->get_database('data_localize_test')->drop;
+
 
 done_testing();
 
